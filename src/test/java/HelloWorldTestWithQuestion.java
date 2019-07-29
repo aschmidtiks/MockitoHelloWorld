@@ -2,13 +2,20 @@
 import classesTest2.Bar;
 import classesTest2.FooNotAvailable;
 import classesTest2.InvalidQuestion;
+import classesTest2.ValidQuestions;
 import interfaces.InterfaceFoo;
 
+import javafx.beans.InvalidationListener;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.ArgumentMatcher;
+import org.mockito.invocation.InvocationOnMock;
+import org.mockito.stubbing.Answer;
+
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
+import static org.mockito.Matchers.argThat;
 
 /*
 @Beforeeach
@@ -24,6 +31,7 @@ Ob das Bar Objekt den richtige Wert (HELLO_WORLD) durch übergabe des Interfaces
 
 public class HelloWorldTestWithQuestion {
     private InterfaceFoo interfaceFoo;
+    private final static ValidQuestions VALID_QUESTIONS = new ValidQuestions();
 
     @BeforeEach
     public void setupMock() {
@@ -58,9 +66,9 @@ public class HelloWorldTestWithQuestion {
     public void barQuestionsFoo() {
         Bar bar = new Bar();
         System.out.println("Bar asks Foo 'Any new topics?', it should get a response");
-        bar.question(interfaceFoo, InterfaceFoo.questionTopics);
+        bar.question(interfaceFoo, InterfaceFoo.ANY_NEW_TOPICS);
         System.out.println("Verify that Foo has been asked the question");
-        verify(interfaceFoo, times(1)).question(InterfaceFoo.questionTopics);
+        verify(interfaceFoo, times(1)).question(InterfaceFoo.ANY_NEW_TOPICS);
     }
 
     @Test
@@ -83,5 +91,68 @@ public class HelloWorldTestWithQuestion {
         });
     }
 
+    @Test
+    public void throwExceptionIfAnyInvalidQuestion() throws InvalidQuestion {
+        assertThrows(InvalidQuestion.class, () -> {
+            Bar bar = new Bar();
+            String invalidQuestion = "Invalid question";
+            when(interfaceFoo.questionStrictly((String) (argThat(new InValidQuestions())))).thenThrow(new InvalidQuestion());
+            bar.questionStrictly(interfaceFoo, invalidQuestion);
+        });
+    }
 
+    @Test
+    public void getTodaysTopicPrice() throws InvalidQuestion {
+        Bar bar = new Bar();
+        when(interfaceFoo.questionStrictly((String) (argThat(new ValidQuestions())))).thenAnswer(new FooAnswers());
+        when(interfaceFoo.getPrice(InterfaceFoo.TOPIC_MOCKITO)).thenReturn(20);
+
+        String answer = bar.questionStrictly(interfaceFoo, InterfaceFoo.ANY_NEW_TOPICS);
+        System.out.println("Answer is: " + answer);
+        assertEquals(answer, "Topic is Mockito, price is 20");
+        verify(interfaceFoo, times(1)).questionStrictly(InterfaceFoo.WHAT_IS_TODAYS_TOPIC);
+        verify(interfaceFoo, times(1)).getPrice(InterfaceFoo.TOPIC_MOCKITO);
+        verify(interfaceFoo, times(1)).bye();
+    }
+
+    @Test
+    public void noNewTopic() throws InvalidQuestion {
+        Bar bar = new Bar();
+        when(interfaceFoo.questionStrictly(InterfaceFoo.ANY_NEW_TOPICS)).thenReturn(InterfaceFoo.NO_NEW_TOPIC);
+
+        String answer = bar.questionStrictly(interfaceFoo, InterfaceFoo.ANY_NEW_TOPICS);
+        System.out.println("Answer is: " + answer);
+        assertEquals(answer, InterfaceFoo.NO_NEW_TOPIC);
+        verify(interfaceFoo, times(1)).bye();
+        verify(interfaceFoo, never()).questionStrictly(InterfaceFoo.WHAT_IS_TODAYS_TOPIC);
+        verify(interfaceFoo, never()).getPrice(InterfaceFoo.TOPIC_MOCKITO);
+    }
+
+    private static class InValidQuestions implements ArgumentMatcher {
+        @Override
+        public boolean matches(Object argument) {
+            return !VALID_QUESTIONS.matches(argument);
+        }
+    }
+
+    private static class ValidQuestions implements ArgumentMatcher {
+
+        @Override
+        public boolean matches(Object argument) {
+            return argument.equals(InterfaceFoo.ANY_NEW_TOPICS) || argument.equals(InterfaceFoo.WHAT_IS_TODAYS_TOPIC);
+        }
+    }
+
+    private static class FooAnswers implements Answer {
+        public String answer(InvocationOnMock invocation) throws Throwable {
+            String arg = (String) invocation.getArguments()[0];
+            if (InterfaceFoo.ANY_NEW_TOPICS.equals(arg)) {
+                return InterfaceFoo.YES_NEW_TOPICS_AVAILABLE;
+            } else if (InterfaceFoo.WHAT_IS_TODAYS_TOPIC.equals(arg)) {
+                return InterfaceFoo.TOPIC_MOCKITO;
+            } else {
+                throw new InvalidQuestion();
+            }
+        }
+    }
 }
