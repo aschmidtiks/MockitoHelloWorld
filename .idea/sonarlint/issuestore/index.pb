@@ -17,3 +17,5 @@ Z
 *src/main/java/interfaces/InterfaceFoo.java,b\b\bb8a7f2df96686504331b6fdd6a58ed2bbec3d46
 ]
 -src/test/java/HelloWorldTestWithQuestion.java,a\a\aabc357f1f336b3acce74b8fbe3df44868007954
+^
+.src/main/java/classesTest2/ValidQuestions.java,8\c\8c11bc3140cd724135a173317641370988b5d524

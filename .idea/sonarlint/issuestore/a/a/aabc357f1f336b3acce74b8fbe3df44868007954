@@ -1,22 +1,0 @@
-
-Xsquid:S2209%"5Change this instance-reference to a static reference.(ÖµÅ™øÿÿÿÿ8š†ŠïÂ-
-U
-squid:S106H"9Replace this use of System.out or System.err by a logger.(şß‘8¥ãµïÂ-
-isquid:CommentedOutCodeLineF"<This block of commented-out lines of code should be removed.(½ÚÅú8§×àïÂ-
-Xsquid:S2209"5Change this instance-reference to a static reference.(«üû£şÿÿÿÿ8š†ŠïÂ-
-[
-squid:S106<"9Replace this use of System.out or System.err by a logger.(€†ÂÊıÿÿÿÿ8¡•¨ïÂ-
-Xsquid:S2209+"5Change this instance-reference to a static reference.(Ğù·œùÿÿÿÿ8š†ŠïÂ-
-¤%squid:RedundantThrowsDeclarationCheck/"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(¿¸›£8Éí¤ïÂ-
-esquid:S00112/"FDefine and throw a dedicated exception instead of using a generic one.(¿¸›£8š†ŠïÂ-
-[
-squid:S106$"9Replace this use of System.out or System.err by a logger.(ØÛú‘ùÿÿÿÿ8š†ŠïÂ-
-Ÿ%squid:RedundantThrowsDeclarationCheckM"gRemove the declaration of thrown exception 'classesTest2.InvalidQuestion' which is a runtime exception.(ÊéÉ8Í“ñÂ-
-[
-squid:S1064"9Replace this use of System.out or System.err by a logger.(¶»€šúÿÿÿÿ8µ¾ïÂ-
-V
-squid:S106>"9Replace this use of System.out or System.err by a logger.(úŠ¸Š8«ªïÂ-
-[
-squid:S106G"9Replace this use of System.out or System.err by a logger.(´Ñ™³ûÿÿÿÿ8ò´ãïÂ-
-[
-squid:S1062"9Replace this use of System.out or System.err by a logger.(³ªĞşûÿÿÿÿ8¨£ïÂ-

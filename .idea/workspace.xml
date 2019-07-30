@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df454837-5097-4617-b6fe-9ba811528720" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/classesTest2/ValidQuestions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Tutorial Site" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/classesTest2/Bar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classesTest2/Bar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/InterfaceFoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/InterfaceFoo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/HelloWorldTestWithQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HelloWorldTestWithQuestion.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -41,8 +36,8 @@
       <file leaf-file-name="HelloWorldTestWithQuestion.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/HelloWorldTestWithQuestion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="732">
-              <caret line="157" column="1" selection-start-line="157" selection-start-column="1" selection-end-line="157" selection-end-column="1" />
+            <state relative-caret-position="222">
+              <caret line="109" column="61" selection-start-line="109" selection-start-column="61" selection-end-line="109" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5281#5282#0" expanded="true" />
@@ -368,9 +363,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HelloWorldTestWithQuestion_filterInvalidQuestions - 2019.07.26 at 13h 09m 10s.xml">
-      <configuration name="HelloWorldTestWithQuestion.filterInvalidQuestions" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HelloWorldTestWithQuestion_filterInvalidQuestions - 2019.07.26 at 13h 09m 44s.xml">
       <configuration name="HelloWorldTestWithQuestion.filterInvalidQuestions" configurationId="JUnit" />
     </history-entry>
@@ -398,6 +390,9 @@
     <history-entry file="HelloWorldTestWithQuestion - 2019.07.29 at 14h 42m 53s.xml">
       <configuration name="HelloWorldTestWithQuestion" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="HelloWorldTestWithQuestion - 2019.07.29 at 16h 46m 53s.xml">
+      <configuration name="HelloWorldTestWithQuestion" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -412,11 +407,11 @@
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.08553971" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.07933194" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.16075157" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.09328358" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0804904" />
       <window_info anchor="bottom" id="SonarLint" order="5" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32985386" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -564,8 +559,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HelloWorldTestWithQuestion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="157" column="1" selection-start-line="157" selection-start-column="1" selection-end-line="157" selection-end-column="1" />
+        <state relative-caret-position="222">
+          <caret line="109" column="61" selection-start-line="109" selection-start-column="61" selection-end-line="109" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5281#5282#0" expanded="true" />

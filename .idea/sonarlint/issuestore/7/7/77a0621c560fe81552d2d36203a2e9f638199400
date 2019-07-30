@@ -1,11 +1,29 @@
 
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(‹æüš8˜Õ“ïÂ-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(—˜ê€üÿÿÿÿ8˜Õ“ïÂ-
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(„‘îì8˜Õ“ïÂ-
-V
-squid:S106 "9Replace this use of System.out or System.err by a logger.(Àš¸8˜Õ“ïÂ-
-~squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ªò´€ÿÿÿÿÿ8˜Õ“ïÂ-
-|squid:S1488"^Immediately return this expression instead of assigning it to the temporary variable "answer".(Ÿ€†£8„Ò˜ğÂ-
+|squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ªò´€ÿÿÿÿÿ8˜Õ“ïÂ-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(Àš¸8Š•¾ëÃ-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(—˜ê€üÿÿÿÿ8´¼¼ëÃ-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(¢­÷Œüÿÿÿÿ8´©ÂëÃ-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(·µ•8‡šÃëÃ-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(š‘­¿úÿÿÿÿ8Š•¾ëÃ-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(Àš¸8´©ÂëÃ-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(„‘îì8˜Õ“ïÂ-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(‹æüš8´©ÂëÃ-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(¾‹ÜÕıÿÿÿÿ8ô¶ÊëÃ-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(—˜ê€üÿÿÿÿ8´©ÂëÃ-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(şœœ†ÿÿÿÿÿ8­ÅÈëÃ-
+¢%squid:RedundantThrowsDeclarationCheck"gRemove the declaration of thrown exception 'classesTest2.InvalidQuestion' which is a runtime exception.(Ğúªïÿÿÿÿÿ8’Î—ëÃ-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(”ß…Ÿÿÿÿÿÿ8Š•¾ëÃ-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(”ß…Ÿÿÿÿÿÿ8­ÅÈëÃ-

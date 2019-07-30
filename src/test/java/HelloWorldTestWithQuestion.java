@@ -2,16 +2,13 @@
 import classesTest2.Bar;
 import classesTest2.FooNotAvailable;
 import classesTest2.InvalidQuestion;
-import classesTest2.ValidQuestions;
 import interfaces.InterfaceFoo;
 
-import javafx.beans.InvalidationListener;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentMatcher;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
-
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -52,7 +49,7 @@ public class HelloWorldTestWithQuestion {
     }
 
     @Test
-    public void fooNotAvailable() throws Exception {
+    public void fooNotAvailable() {
         assertThrows(FooNotAvailable.class, () -> {
             Bar bar = new Bar();
             System.out.println("Foo is down so will not respond");
@@ -75,7 +72,6 @@ public class HelloWorldTestWithQuestion {
     public void filterInvalidQuestions() {
         Bar bar = new Bar();
         String invalidQuestion = "Invalid questions";
-        //bar.question(interfaceFoo, invalidQuestion);
         System.out.println(bar.question(interfaceFoo, invalidQuestion));
         System.out.println("Verify that question was never requested because of the invalid input");
         verify(interfaceFoo, never()).question(invalidQuestion);
