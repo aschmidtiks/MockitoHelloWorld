@@ -1,3 +1,3 @@
 
-Esquid:S1214""Move constants to a class or enum.(¾¶üÖúÿÿÿÿ8ÌóğÂ-
-¤%squid:RedundantThrowsDeclarationCheck"gRemove the declaration of thrown exception 'classesTest2.InvalidQuestion' which is a runtime exception.(Ø±»±úÿÿÿÿ8‘Î—ëÃ-
+¢%squid:RedundantThrowsDeclarationCheck"gRemove the declaration of thrown exception 'classesTest2.InvalidQuestion' which is a runtime exception.(Ø±»±úÿÿÿÿ8‘Î—ëÃ-
+Csquid:S1214""Move constants to a class or enum.(¾¶üÖúÿÿÿÿ8ÌóğÂ-

@@ -14,18 +14,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 import static org.mockito.Matchers.argThat;
 
-/*
-@Beforeeach
-Es wird ein Interface gemocked
-Der Rückgabe wert für die Methode greet() des interfaces wird festgelegt
-
-Erster Test:
-Ob die greet Funktion des interfaces Foo den richtigen wert (HELLO_WORLD) ausgibt
-
-Zweiter Test:
-Ob das Bar Objekt den richtige Wert (HELLO_WORLD) durch übergabe des Interfaces ausgibt
-*/
-
 public class HelloWorldTestWithQuestion {
     private InterfaceFoo interfaceFoo;
     private final static ValidQuestions VALID_QUESTIONS = new ValidQuestions();
